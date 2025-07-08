@@ -13,9 +13,9 @@ To start the camera control service:
 ## How It Works:
 
 The script continuously monitors for:
-•  Windows Hello authentication processes (WinBio, AuthHost, LogonUI)
-•  Lock screen activity
-•  Biometric service activity
+- Windows Hello authentication processes (WinBio, AuthHost, LogonUI)
+- Lock screen activity
+- Biometric service activity
 
 When Windows Hello Face ID is detected:
 1. Disables your front camera device
@@ -23,9 +23,9 @@ When Windows Hello Face ID is detected:
 
 ## Features:
 
-•  Targets front camera specifically - Filters for cameras with "Front" or "Integrated" in the name
-•  Avoids IR cameras - Excludes Windows Hello IR cameras from being controlled
-•  Logging - Creates a log file at %TEMP%\WindowsHelloCameraControl.log
-•  Administrator check - Ensures the script runs with required privileges
-•  Background operation - Runs continuously in the background
-•  Error handling - Gracefully handles errors and continues monitoring
+- Targets front camera specifically - Filters for cameras with "Front" or "Integrated" in the name
+- Avoids IR cameras - Excludes Windows Hello IR cameras from being controlled
+- Logging - Creates a log file at %TEMP%\WindowsHelloCameraControl.log
+- Administrator check - Ensures the script runs with required privileges
+- Background operation - Runs continuously in the background
+- Error handling - Gracefully handles errors and continues monitoring
