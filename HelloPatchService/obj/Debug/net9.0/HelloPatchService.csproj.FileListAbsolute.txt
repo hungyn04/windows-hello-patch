@@ -1,0 +1,5 @@
+C:\Users\prkha\Scripts\windows-hello-patch\HelloPatchService\obj\Debug\net9.0\HelloPatchService.csproj.AssemblyReference.cache
+C:\Users\prkha\Scripts\windows-hello-patch\HelloPatchService\obj\Debug\net9.0\HelloPatchService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\prkha\Scripts\windows-hello-patch\HelloPatchService\obj\Debug\net9.0\HelloPatchService.AssemblyInfoInputs.cache
+C:\Users\prkha\Scripts\windows-hello-patch\HelloPatchService\obj\Debug\net9.0\HelloPatchService.AssemblyInfo.cs
+C:\Users\prkha\Scripts\windows-hello-patch\HelloPatchService\obj\Debug\net9.0\HelloPatchService.csproj.CoreCompileInputs.cache
