@@ -11,6 +11,10 @@ if %ERRORLEVEL% neq 0 (
 )
 
 echo Starting Windows Hello Face ID camera monitoring service...
-start "HelloCameraPatchService" powershell.exe -NoProfile -NonInteractive -WindowStyle Hidden -ExecutionPolicy Bypass -File "%~dp0WindowsHelloCameraControl.ps1"
+start "" powershell.exe -NoProfile -NonInteractive -WindowStyle Hidden -ExecutionPolicy Bypass -File "%~dp0WindowsHelloCameraControl.ps1"
 echo Service started. Check the log at %TEMP%\WindowsHelloCameraControl.log for details.
+
+echo.
+echo Press Enter to exit...
+pause >nul
 exit /b 0
