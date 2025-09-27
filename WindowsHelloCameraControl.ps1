@@ -79,21 +79,13 @@ function Test-WindowsHelloFaceIDActive {
         }
         catch { }
 
-        # Check registry for Windows Hello status (if accessible)
-        $biometricActive = $false
+        # Check for CredentialUIBroker
         try {
-            $biometricService = Get-Service -Name "WbioSrvc" -ErrorAction SilentlyContinue
-            if ($biometricService -and $biometricService.Status -eq "Running") {
-                # Check if biometric authentication is in progress
-                $biometricProcesses = Get-Process | Where-Object {
-                    $_.ProcessName -match "WinBio" -or $_.ProcessName -match "BioIso"
-                }
-                $biometricActive = $biometricProcesses.Count -gt 0
-            }
+            $creUIBrkrActive = (Get-Process -Name "CredentialUIBroker" -ErrorAction SilentlyContinue) -ne $null
         }
         catch { }
 
-        return $lockScreenActive -or $authUIActive -or $biometricActive
+        return $lockScreenActive -or $authUIActive -or $creUIBrkrActive
     }
     catch {
         Write-Log "Error checking Windows Hello status: $($_.Exception.Message)"
